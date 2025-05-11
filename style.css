@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* Animation classes (will be toggled by JavaScript) */
+.slide-in {
+    animation: slideIn 1s ease-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-in forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#preferenceOutput {
+    margin-top: 10px;
+    font-style: italic;
+}
+
